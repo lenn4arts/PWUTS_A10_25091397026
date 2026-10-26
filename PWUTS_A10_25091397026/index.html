@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/img/logo.png">
+<title>SiMagang – Dashboard Dosen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#" data-page="home" aria-label="SiMagang – Sistem Monitoring PKL"><img src="assets/img/logo.png" alt="SiMagang – Sistem Monitoring PKL"></a>
+    <button id="menuBtn" class="icon-btn" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Menu utama">
+      <a href="#" class="nav-link active" data-page="home">Beranda</a>
+      <a href="pages/mahasiswa.html" class="nav-link" data-page="mahasiswa">Daftar Mahasiswa</a>
+      <a href="pages/input-nilai.html" class="nav-link" data-page="input-nilai">Input Nilai</a>
+    </nav>
+    <div class="user"><span class="avatar">D</span><span class="user-name">Dosen Pembimbing</span></div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home">
+    <div class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <span class="chip">Periode Genap 2025/2026</span>
+          <h1>Halo, Dosen Pembimbing</h1>
+          <p id="heroSummary">Memuat ringkasan…</p>
+          <a href="pages/mahasiswa.html" class="btn btn-gold nav-link-inline" data-page="mahasiswa">Buka daftar mahasiswa</a>
+        </div>
+        <div class="queue-card">
+          <h2>Antrean validasi mingguan</h2>
+          <ul id="queue"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap section">
+      <div class="cards" id="statCards"></div>
+      <h2>Laporan terbaru yang sudah disetujui pembimbing magang</h2>
+      <div class="table-wrap"><table class="tbl"><thead><tr><th>Mahasiswa</th><th>Judul</th><th>Tanggal</th><th>Status</th></tr></thead><tbody id="recentBody"></tbody></table></div>
+    </div>
+  </section>
+  <section id="content" class="wrap section" hidden></section>
+</main>
+
+<footer class="footer">© 2026 Program D4 Manajemen Informatika – Universitas Negeri Surabaya · Kelompok A10</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
